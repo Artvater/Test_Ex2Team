@@ -1,0 +1,445 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1722638350, guid: b156eeaae3f741b40af66649a4748430, type: 3}
+  m_Name: Ex2TeamQuantumMap_1
+  m_EditorClassIdentifier: Quantum.Engine.dll::Quantum.Map
+  Identifier:
+    Path: Ex2Team/Resources/Ex2TeamQuantumMap_1
+    Guid:
+      Value: 435995695386685042
+  UserAsset:
+    Id:
+      Value: 0
+  Scene: Level_1
+  ScenePath: Assets/Ex2Team/Scenes/Level_1.unity
+  SceneGuid: 4cf82eb43b2241348ad9d965b7f80752
+  WorldSize: 256
+  BucketsCount: 16
+  BucketsSubdivisions: 8
+  BucketingAxis: 0
+  SortingAxis: 1
+  SceneMeshCellSize:
+    RawValue: 262144
+  TriangleMeshCellSize: -1
+  StaticColliders3DTrianglesData:
+    Id:
+      Value: 424917892734839134
+  SerializeTrianglesMetadata: 0
+  GridSizeX: 64
+  GridSizeY: 64
+  GridNodeSize: 4
+  NavMeshLinks: []
+  Regions: []
+  StaticColliders2D: []
+  StaticColliders3D:
+  - Rotation:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+      W:
+        RawValue: 65536
+    Position:
+      X:
+        RawValue: -1874985
+      Y:
+        RawValue: 92923
+      Z:
+        RawValue: 170961
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    ShapeType: 32
+    SphereRadius:
+      RawValue: 0
+    CapsuleRadius:
+      RawValue: 1966
+    CapsuleHeight:
+      RawValue: 262444
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+    SmoothSphereMeshCollisions: 0
+    StaticData:
+      Name: CapsuleStaticCollider
+      Tag: Untagged
+      Layer: 0
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 0
+      MutableMode: 0
+  - Rotation:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+      W:
+        RawValue: 65536
+    Position:
+      X:
+        RawValue: -1874985
+      Y:
+        RawValue: 92923
+      Z:
+        RawValue: 2009
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    ShapeType: 32
+    SphereRadius:
+      RawValue: 0
+    CapsuleRadius:
+      RawValue: 1966
+    CapsuleHeight:
+      RawValue: 262444
+    BoxExtents:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+    SmoothSphereMeshCollisions: 0
+    StaticData:
+      Name: CapsuleStaticCollider
+      Tag: Untagged
+      Layer: 0
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 1
+      MutableMode: 0
+  - Rotation:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+      W:
+        RawValue: 65536
+    Position:
+      X:
+        RawValue: -1649377
+      Y:
+        RawValue: -16809
+      Z:
+        RawValue: 87586
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    ShapeType: 2
+    SphereRadius:
+      RawValue: 0
+    CapsuleRadius:
+      RawValue: 0
+    CapsuleHeight:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 390116
+      Y:
+        RawValue: 15958
+      Z:
+        RawValue: 90475
+    SmoothSphereMeshCollisions: 0
+    StaticData:
+      Name: Platform
+      Tag: Untagged
+      Layer: 0
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 2
+      MutableMode: 0
+  - Rotation:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+      W:
+        RawValue: 65536
+    Position:
+      X:
+        RawValue: -1874919
+      Y:
+        RawValue: 192800
+      Z:
+        RawValue: 86354
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    ShapeType: 2
+    SphereRadius:
+      RawValue: 0
+    CapsuleRadius:
+      RawValue: 0
+    CapsuleHeight:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 668
+      Y:
+        RawValue: 18638
+      Z:
+        RawValue: 83814
+    SmoothSphereMeshCollisions: 0
+    StaticData:
+      Name: FinishBanner
+      Tag: Untagged
+      Layer: 0
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 3
+      MutableMode: 0
+  - Rotation:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+      W:
+        RawValue: 65536
+    Position:
+      X:
+        RawValue: -544984
+      Y:
+        RawValue: -11796
+      Z:
+        RawValue: 87402
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    ShapeType: 2
+    SphereRadius:
+      RawValue: 0
+    CapsuleRadius:
+      RawValue: 0
+    CapsuleHeight:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 654864
+      Y:
+        RawValue: 11551
+      Z:
+        RawValue: 243780
+    SmoothSphereMeshCollisions: 0
+    StaticData:
+      Name: Floor
+      Tag: Untagged
+      Layer: 0
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 4
+      MutableMode: 0
+  - Rotation:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+      W:
+        RawValue: 65536
+    Position:
+      X:
+        RawValue: -300744
+      Y:
+        RawValue: 46071
+      Z:
+        RawValue: -9721
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    ShapeType: 2
+    SphereRadius:
+      RawValue: 0
+    CapsuleRadius:
+      RawValue: 0
+    CapsuleHeight:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 70451
+      Y:
+        RawValue: 46326
+      Z:
+        RawValue: 104038
+    SmoothSphereMeshCollisions: 0
+    StaticData:
+      Name: Cube_1
+      Tag: Untagged
+      Layer: 0
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 5
+      MutableMode: 0
+  - Rotation:
+      X:
+        RawValue: 0
+      Y:
+        RawValue: 0
+      Z:
+        RawValue: 0
+      W:
+        RawValue: 65536
+    Position:
+      X:
+        RawValue: -640942
+      Y:
+        RawValue: 46071
+      Z:
+        RawValue: 149596
+    PhysicsMaterial:
+      Id:
+        Value: 0
+    ShapeType: 2
+    SphereRadius:
+      RawValue: 0
+    CapsuleRadius:
+      RawValue: 0
+    CapsuleHeight:
+      RawValue: 0
+    BoxExtents:
+      X:
+        RawValue: 70451
+      Y:
+        RawValue: 46326
+      Z:
+        RawValue: 104038
+    SmoothSphereMeshCollisions: 0
+    StaticData:
+      Name: Cube_2
+      Tag: Untagged
+      Layer: 0
+      Asset:
+        Id:
+          Value: 0
+      IsTrigger: 0
+      ColliderIndex: 6
+      MutableMode: 0
+  MapEntities:
+  - Components:
+    - rid: 6951524088925913088
+    - rid: 6951524088925913089
+    - rid: 6951524088925913090
+    - rid: 6951524088925913091
+  - Components:
+    - rid: 5131450002672975872
+  SerializedTriangleDataUncompressedSize: 8
+  references:
+    version: 2
+    RefIds:
+    - rid: 5131450002672975872
+      type: {class: Ex2TeamGameplayPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        PreTransitionTime:
+          RawValue: 163840
+        SpawnPosition:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 131072
+          Z:
+            RawValue: 131072
+    - rid: 6951524088925913088
+      type: {class: Transform3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        Position:
+          X:
+            RawValue: -1955751
+          Y:
+            RawValue: 55653
+          Z:
+            RawValue: 86295
+        Rotation:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+    - rid: 6951524088925913089
+      type: {class: PhysicsCollider3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        ShapeConfig:
+          ShapeType: 2
+          SphereRadius:
+            RawValue: 82231
+          CapsuleRadius:
+            RawValue: 82231
+          CapsuleHeight:
+            RawValue: 219480
+          PositionOffset:
+            X:
+              RawValue: 0
+            Y:
+              RawValue: 0
+            Z:
+              RawValue: 0
+          BoxExtents:
+            X:
+              RawValue: 79010
+            Y:
+              RawValue: 54870
+            Z:
+              RawValue: 82231
+          RotationOffset:
+            X:
+              RawValue: 0
+            Y:
+              RawValue: 0
+            Z:
+              RawValue: 0
+          UserTag: 0
+          IsPersistent: 1
+          CompoundShapes: []
+        Layer: 0
+        IsTrigger: 1
+        PhysicsMaterial:
+          Id:
+            Value: 0
+    - rid: 6951524088925913090
+      type: {class: PhysicsCallbacks3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
+      data:
+        CallbackFlags:
+          Value: 128
+    - rid: 6951524088925913091
+      type: {class: FinishTriggerPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
+      data:
+        TargetMap:
+          Id:
+            Value: 410358759554140589
+        RequireAllPlayers:
+          Value: 1

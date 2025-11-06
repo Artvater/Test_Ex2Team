@@ -1,0 +1,54 @@
+singleton component Ex2TeamGameplay {
+	FP PreTransitionTime;
+	FPVector3 SpawnPosition;
+
+	[ExcludeFromPrototype]
+	PlayerRef Winner;
+}
+
+component PlayerLink {
+	PlayerRef Player;
+}
+
+component PushableObject {
+    FP CurrentMass;
+    FP MinMass;
+    FP MaxMass;
+}
+
+component PlayerInteractionState {
+	[ExcludeFromPrototype]
+    EntityRef CubeEntity;
+}
+
+component FinishTrigger {
+	AssetRef<Map> TargetMap;
+	bool RequireAllPlayers;
+}
+
+component PlayerInTrigger {
+	[ExcludeFromPrototype]
+	entity_ref CurrentTrigger;
+}
+
+input {
+	FPVector2 Direction;
+	button Jump;
+
+	FP MassAdjustment;
+}
+
+event OnStartPushing {
+	EntityRef Entity; 
+	EntityRef OtherObject;
+	bool IsObjectInFront;
+}
+
+event OnEndPushing {
+	EntityRef Entity;
+}
+
+event MapTransition {
+    PlayerRef Winner;
+    AssetRef<Map> TargetMap;
+}

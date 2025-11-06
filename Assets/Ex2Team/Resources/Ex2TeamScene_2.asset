@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef11b24dd8b636479cc530200469ee2, type: 3}
+  m_Name: Ex2TeamScene_2
+  m_EditorClassIdentifier: 
+  Name: Ex2TeamScene_2
+  ScenePath: Assets/Ex2Team/Ex2TeamScene_2.unity
+  Preview: {fileID: 54080320, guid: a2cbc3f391c9f47488a7118fb5805195, type: 3}
+  IsHidden: 0
+  RuntimeConfig:
+    Seed: 0
+    Map:
+      Id:
+        Value: 435995695386685042
+    SimulationConfig:
+      Id:
+        Value: 321197316028203297
+    SystemsConfig:
+      Id:
+        Value: 325454186534053441
+    GameConfig:
+      Id:
+        Value: 0
+    DefaultPlayerAvatar:
+      Id:
+        Value: 1361407765337670047
