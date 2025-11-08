@@ -36,7 +36,7 @@ namespace Quantum.Ex2Team
         private PlayerRef _cachedLocalPlayer = PlayerRef.None;
 
         private const float HideCGAlpha = 0f;
-        private const float showCGAlpha = 1f;
+        private const float ShowCGAlpha = 1f;
 
         private void Awake()
         {
@@ -58,9 +58,9 @@ namespace Quantum.Ex2Team
 
         private void OnEnable()
         {
-            QuantumEvent.Subscribe(listener: this, handler: (EventOnStartPushing e) => ShowUI(e));
-            QuantumEvent.Subscribe(listener: this, handler: (EventOnEndPushing e) => HideUI(e));
-            QuantumEvent.Subscribe(listener: this, handler: (EventMapTransition e) => OnMapTransitionEvent(e));
+            QuantumEvent.Subscribe(this, (EventOnStartPushing e) => ShowUI(e));
+            QuantumEvent.Subscribe(this, (EventOnEndPushing e) => HideUI(e));
+            QuantumEvent.Subscribe( this, (EventMapTransition e) => OnMapTransitionEvent(e));
 
             QuantumCallback.Subscribe(this, (CallbackGameStarted callback) => OnQuantumGameStarted(callback));
             QuantumCallback.Subscribe(this, (CallbackGameDestroyed callback) => OnQuantumGameDestroyed(callback));
@@ -142,7 +142,7 @@ namespace Quantum.Ex2Team
 
             if (finishCanvasGroup != null && levelFinishText != null)
             {
-                finishCanvasGroup.alpha = showCGAlpha;
+                finishCanvasGroup.alpha = ShowCGAlpha;
                 levelFinishText.text =
                     $"We have a winner!\n<color=green>{winnerData.PlayerNickname}</color>\n Next level - <color=yellow>{targetMap.Scene}</color>";
 
@@ -155,13 +155,13 @@ namespace Quantum.Ex2Team
                 yield break;
 
             float elapsed = 0f;
-            finishCanvasGroup.alpha = showCGAlpha;
+            finishCanvasGroup.alpha = ShowCGAlpha;
 
             yield return new WaitForSeconds(finishDisplayDuration); 
 
             while (elapsed < 1f / fadeSpeed) {
                 elapsed += Time.deltaTime;
-                finishCanvasGroup.alpha = Mathf.Lerp(showCGAlpha, HideCGAlpha, elapsed * fadeSpeed);
+                finishCanvasGroup.alpha = Mathf.Lerp(ShowCGAlpha, HideCGAlpha, elapsed * fadeSpeed);
                 yield return null;
             }
             finishCanvasGroup.alpha = HideCGAlpha;
@@ -198,9 +198,8 @@ namespace Quantum.Ex2Team
             {
                 _isUpdatingSlider = true;
 
-                if (!_isUIInitialized)
-                {
-                    InitializeUI(pushable);
+                if (!_isUIInitialized) {
+                    InitializeUI(frame, pushable);
                 }
 
                 massSlider.value = pushable->CurrentMass.AsFloat;
@@ -211,11 +210,11 @@ namespace Quantum.Ex2Team
 
             if (massControlCanvasGroup != null)
             {
-                massControlCanvasGroup.alpha = showCGAlpha;
+                massControlCanvasGroup.alpha = ShowCGAlpha;
             }
         }
 
-        private void InitializeUI(PushableObject* pushable)
+        private void InitializeUI(Frame frame, PushableObject* pushable)
         {
             if (_isUIInitialized)
                 return;
@@ -233,6 +232,8 @@ namespace Quantum.Ex2Team
             
             if (maxMassValueText != null)
                 maxMassValueText.text = pushable->MaxMass.AsFloat.ToString("F0");
+
+            InitializeMassChangeUI(frame, pushable);
         }
 
         private void HideUI(EventOnEndPushing e) {
@@ -254,15 +255,23 @@ namespace Quantum.Ex2Team
 
             if (!frame.Unsafe.TryGetPointer<PushableObject>(_currentCube, out var pushable))
                 return;
-            
+
             float quantumMass = pushable->CurrentMass.AsFloat;
 
-            if (Mathf.Abs(massSlider.value - quantumMass) > 1f) {
+            if (Mathf.Abs(massSlider.value - quantumMass) > 0.01f) {
                 _isUpdatingSlider = true;
-                massSlider.value = quantumMass;
-                UpdateMassText(quantumMass);
+                UpdateMassText(massSlider.value);
                 _isUpdatingSlider = false;
             }
+        }
+
+        private void InitializeMassChangeUI(Frame frame, PushableObject* pushable) {
+            if (!frame.Unsafe.TryGetPointer<PhysicsBody3D>(_currentCube, out var cubePhysBody))
+                return;
+
+            float quantumMass = cubePhysBody->Mass.AsFloat;
+            pushable->CurrentMass = quantumMass.ToFP();
+            massSlider.value = quantumMass;
         }
 
         private void OnMassSliderChanged(float value) {

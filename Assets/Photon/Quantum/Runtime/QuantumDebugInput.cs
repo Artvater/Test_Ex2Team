@@ -34,7 +34,7 @@ namespace Quantum {
       }
 #endif
 
-      Quantum.Input i = new Quantum.Input();
+      Input i = new Input();
 
       float x = UnityEngine.Input.GetAxis("Horizontal");
       float y = UnityEngine.Input.GetAxis("Vertical");

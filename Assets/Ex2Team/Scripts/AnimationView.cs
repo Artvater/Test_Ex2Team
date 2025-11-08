@@ -18,8 +18,8 @@ namespace Quantum.Ex2Team
         public override void OnInitialize()
         {
             _anim = GetComponentInChildren<Animator>();
-            QuantumEvent.Subscribe(listener: this, handler: (EventOnStartPushing e) => HandleStartPushingEvent(e));
-            QuantumEvent.Subscribe(listener: this, handler: (EventOnEndPushing e) => HandleEndPushingEvent(e));
+            QuantumEvent.Subscribe(this, (EventOnStartPushing e) => HandleStartPushingEvent(e));
+            QuantumEvent.Subscribe(this, (EventOnEndPushing e) => HandleEndPushingEvent(e));
         }
 
         void HandleStartPushingEvent(EventOnStartPushing e)
@@ -60,7 +60,6 @@ namespace Quantum.Ex2Team
             }
 
             _anim.SetBool(PushParameterName, _onPushingContinue && speed > 0);
-
         }
     }
 }

@@ -565,14 +565,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c18b5bff5f34d34eaeb0a5d4fd8ea70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CubeMassUI
-  _canvasGroup: {fileID: 1872392354}
   massSlider: {fileID: 1673230866}
   massValueText: {fileID: 883797956}
   minMassValueText: {fileID: 1305713686}
   maxMassValueText: {fileID: 1365551381}
-  fadeSpeed: 5
-  inputSendDelay: 0.1
+  levelFinishText: {fileID: 0}
   inputProvider: {fileID: 56056935}
+  massControlCanvasGroup: {fileID: 0}
+  finishCanvasGroup: {fileID: 0}
+  finishDisplayDuration: 2.5
+  fadeSpeed: 5
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,7 +2757,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -3480,7 +3483,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -3616,7 +3620,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -4610,12 +4615,6 @@ MonoBehaviour:
     SystemsConfig:
       Id:
         Value: 325454186534053441
-    GameConfig:
-      Id:
-        Value: 0
-    DefaultPlayerAvatar:
-      Id:
-        Value: 1361407765337670047
   UseRandomSeed: 0
   SessionConfig: {fileID: 0}
   LocalPlayers:
@@ -4823,12 +4822,6 @@ MonoBehaviour:
     SystemsConfig:
       Id:
         Value: 325454186534053441
-    GameConfig:
-      Id:
-        Value: 0
-    DefaultPlayerAvatar:
-      Id:
-        Value: 1361407765337670047
   RuntimePlayers:
   - PlayerAvatar:
       Id:

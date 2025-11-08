@@ -35,7 +35,6 @@ RectTransform:
   m_Children:
   - {fileID: 5921372476468953131}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -59,7 +58,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -94,7 +95,7 @@ MonoBehaviour:
     m_Bits: 4294967295
 --- !u!95 &-3485072856006381108
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,6 +109,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -130,6 +132,7 @@ MonoBehaviour:
   - {fileID: 156669489253945656}
   - {fileID: 8440494478242064826}
   - {fileID: 7199561959198764660}
+  IsReconnectionCheckEnabled: 0
   _codeText: {fileID: 4710119736131791270}
   _playersText: {fileID: 6188651617679926265}
   _playersCountText: {fileID: 8622891803225168783}
@@ -147,6 +150,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 9080202634340887961}
     m_Modifications:
     - target: {fileID: 257479551736267207, guid: 83324800691fbbd43bc5a978d6df0475, type: 3}
@@ -602,6 +606,21 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8475043398331695537, guid: 83324800691fbbd43bc5a978d6df0475, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8440494478242064826}
+    - targetCorrespondingSourceObject: {fileID: 7849479621083641115, guid: 83324800691fbbd43bc5a978d6df0475, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7199561959198764660}
+    - targetCorrespondingSourceObject: {fileID: 7931232373392535368, guid: 83324800691fbbd43bc5a978d6df0475, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7790988537513087670}
+    - targetCorrespondingSourceObject: {fileID: 7419640000225901304, guid: 83324800691fbbd43bc5a978d6df0475, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 156669489253945656}
   m_SourcePrefab: {fileID: 100100000, guid: 83324800691fbbd43bc5a978d6df0475, type: 3}
 --- !u!114 &509134921943599464 stripped
 MonoBehaviour:
