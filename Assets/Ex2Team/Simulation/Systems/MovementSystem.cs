@@ -1,7 +1,9 @@
 namespace Quantum.Ex2Team
 {
     using Photon.Deterministic;
+    using UnityEngine.Scripting;
 
+    [Preserve]
     public unsafe class MovementSystem : SystemMainThreadFilter<MovementSystem.Filter>
     {
 

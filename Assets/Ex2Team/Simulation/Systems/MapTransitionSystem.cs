@@ -2,7 +2,9 @@
 {
     using Photon.Deterministic;
     using Quantum;
+    using UnityEngine.Scripting;
 
+    [Preserve]
     public unsafe class MapTransitionSystem : SystemSignalsOnly, ISignalOnTriggerEnter3D
     {
 

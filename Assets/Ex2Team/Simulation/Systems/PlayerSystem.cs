@@ -1,7 +1,9 @@
 namespace Quantum.Ex2Team
 {
     using Photon.Deterministic;
+    using UnityEngine.Scripting;
 
+    [Preserve]
     public unsafe class PlayerSystem : SystemSignalsOnly, ISignalOnPlayerAdded, ISignalOnPlayerDisconnected
     {
         public void OnPlayerAdded(Frame frame, PlayerRef player, bool firstTime) {

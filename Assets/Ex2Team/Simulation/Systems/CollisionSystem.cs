@@ -1,7 +1,9 @@
 namespace Quantum.Ex2Team
 {
     using Photon.Deterministic;
+    using UnityEngine.Scripting;
 
+    [Preserve]
     public unsafe class CollisionSystem : SystemSignalsOnly, ISignalOnCollisionEnter3D, ISignalOnCollision3D, ISignalOnCollisionExit3D
     {
         private static readonly FP PushDotThreshold = FP._0_75;
