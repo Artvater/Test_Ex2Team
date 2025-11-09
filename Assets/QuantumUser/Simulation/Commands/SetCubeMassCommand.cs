@@ -17,7 +17,6 @@ namespace Quantum
 
         public void Execute(Frame f)
         {
-            UnityEngine.Debug.Log("commmmmmmmaaqaaaaand");
             if (f.Unsafe.TryGetPointer<PushableObject>(CubeEntity, out var pushable) &&
                 f.Unsafe.TryGetPointer<PhysicsBody3D>(CubeEntity, out var body)) {
                 FP clampedMass = FPMath.Clamp(NewMass, pushable->MinMass, pushable->MaxMass);
