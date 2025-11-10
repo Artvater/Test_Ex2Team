@@ -529,6 +529,10 @@ PrefabInstance:
       propertyPath: DefaultConnectionArgs.RuntimeConfig.SimulationConfig.Id.Value
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7243461719588803421, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0, type: 3}
+      propertyPath: ConnectArgs.RuntimePlayers.Array.data[0].PlayerAvatar.Id.Value
+      value: 1361407765337670047
+      objectReference: {fileID: 0}
     - target: {fileID: 7545343568668095747, guid: 7d78f8a9ae2bcc1408312ef78f87bdf0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
