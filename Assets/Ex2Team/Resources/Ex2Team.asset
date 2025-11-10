@@ -42,31 +42,31 @@ MonoBehaviour:
     StartDisabled: 0
     Children: []
   - SystemType:
-      AssemblyQualifiedName: Quantum.Ex2Team.PlayerSystem, Assembly-CSharp, Version=0.0.0.0,
+      AssemblyQualifiedName: Quantum.Ex2Team.PlayerSystem, Quantum.Simulation, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
     SystemName: 
     StartDisabled: 0
     Children: []
   - SystemType:
-      AssemblyQualifiedName: Quantum.Ex2Team.MovementSystem, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    SystemName: 
-    StartDisabled: 0
-    Children: []
-  - SystemType:
-      AssemblyQualifiedName: Quantum.Ex2Team.CollisionSystem, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-    SystemName: 
-    StartDisabled: 0
-    Children: []
-  - SystemType:
-      AssemblyQualifiedName: Quantum.Ex2Team.CubeMassControlSystem, Assembly-CSharp,
+      AssemblyQualifiedName: Quantum.Ex2Team.MovementSystem, Quantum.Simulation,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     SystemName: 
     StartDisabled: 0
     Children: []
   - SystemType:
-      AssemblyQualifiedName: Quantum.Ex2Team.MapTransitionSystem, Assembly-CSharp,
+      AssemblyQualifiedName: Quantum.Ex2Team.CollisionSystem, Quantum.Simulation,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    SystemName: 
+    StartDisabled: 0
+    Children: []
+  - SystemType:
+      AssemblyQualifiedName: Quantum.Ex2Team.CubeMassControlSystem, Quantum.Simulation,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    SystemName: 
+    StartDisabled: 0
+    Children: []
+  - SystemType:
+      AssemblyQualifiedName: Quantum.Ex2Team.MapTransitionSystem, Quantum.Simulation,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     SystemName: 
     StartDisabled: 0
